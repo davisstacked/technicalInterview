@@ -14,8 +14,23 @@ function solution(number){
       sum += i 
       }
   }
-  console.log(sum);
   return sum;
 }
 
-solution(200);
+
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+
+numArr = [1, 2, 6, 3, 90, 7, 9, 8, 12, 18, 33, 21, .07, 250];
+
+function maxAndMin(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  return [min, max];
+}
+
+
+// A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
+
+// The wanted word is in lowercase.
+// The crowd of letters is all in uppercase.
+// Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
