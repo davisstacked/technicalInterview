@@ -34,3 +34,18 @@ function maxAndMin(arr) {
 // The wanted word is in lowercase.
 // The crowd of letters is all in uppercase.
 // Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
+
+// "YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"
+
+function detectWord(str) {
+  let word = [];
+  for (i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toLowerCase()) {
+      word.push(str[i]);
+    }
+  }
+  lowerCaseWord = word.join('');
+  return lowerCaseWord;
+}
+
+// detectWord('YFemHUFBbezFBYzFBYLleGBYEFGBMENTment');
