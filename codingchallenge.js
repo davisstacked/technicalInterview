@@ -60,4 +60,22 @@ function addUp(num) {
   return sum;
 }
 
-console.log(addUp(10));
+// Given an integer x, return true if x is palindrome integer.
+
+// An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
+
+const isPalindrome = function(x) {
+  if (x < 0) {
+      return false;
+  } else {
+    const string = x.toString().split('').reverse().join('');
+    const palindrome = parseInt(string);
+    if (x === palindrome) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+console.log(isPalindrome(1001));
